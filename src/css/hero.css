@@ -151,6 +151,31 @@
 .hero__socials a:hover {
     color: var(--primary-pink);
     transform: translateY(-3px);
+    transition: var(--events-social);
+}
+
+/* novo: cor de hover para cada item */
+.hero__socials a .linkedin:hover {
+    color: var(--linkedin);
+}
+
+
+.hero__socials a .instagram:hover {
+    /* usei bg-linear com clip-text*/
+    background: var(--instagram);
+    -webkit-background-clip: text;
+    /* Necessário para navegadores Chrome/Safari */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero__socials a .github:hover {
+    color: var(--primary-pink);
+}
+
+.hero__socials a .codepen:hover {
+    color: var(--codepen);
 }
 
 /* --- Lado Direito: Imagem --- */
