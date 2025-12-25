@@ -1,0 +1,7 @@
+# Configurações pessoais do VS Code
+.vscode/
+#remap
+# Se você futuramente usar Node.js ou SASS (como falamos antes)
+node_modules/
+.sass-cache/
+*.css.map

@@ -81,7 +81,7 @@ a.links--contact {
 }
 
 a.links--contact:hover {
-    background-color: var(--bg-ink-black);
+    background-color: var(--hover-bg);
 }
 
 .nav-links a:hover {

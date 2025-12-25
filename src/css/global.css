@@ -29,13 +29,21 @@
     --primary-pink: #fc6471;
     /* Rosa Bubblegum */
 
-    /** --icon-gold: #F991CC;
-    /* Dourado */
-
+    --secondary-green: #98CE00;
+    /*para testes*/
 
     --border-glow: rgba(255, 255, 255, 0.2);
+    --hover-bg: #04080B;
     --border-translucent: rgba(255, 255, 255, 0.5);
 
+
+
+
+    /*links hero__socials hover*/
+    --events-social: transition: all ease 0.4s;
+    --linkedin: #0A66C2;
+    --instagram: linear-gradient(to top, #405de6, #833ab4, #c13584);
+    --codepen: #0EBEFF;
 
     /* Configurações - Base */
     --font-main: Helvetica, Arial, sans-serif;

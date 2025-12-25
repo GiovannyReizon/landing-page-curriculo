@@ -58,7 +58,7 @@
     font-size: 4rem;
     /* Tamanho grande */
     font-weight: 800;
-    color: var(--text-);
+    color: var(--text-white);
     line-height: 1.1;
     margin-bottom: 40px;
     min-height: 1.2em;
@@ -69,15 +69,14 @@
 
 /* O texto que é digitado */
 .typewriter-text {
-    color: var(--text-black);
+    color: var(--text-white);
     /* Se quiser que o texto digitado seja AZUL, troque para: var(--primary-blue) */
 }
 
 /* O Cursor (Barra vertical) */
 .cursor {
     display: inline-block;
-    background-color: var(--text-black);
-    /* Seu azul vibrante */
+    background-color: var(--primary-pink);
     width: 5px;
     /* Espessura da barra */
     height: 70px;
@@ -124,12 +123,11 @@
     gap: 15px;
     margin-bottom: 15px;
     font-size: 1rem;
-    color: var(--text-grey);
+    color: var(--text-white);
 }
 
 .hero__contact-list li i {
     color: var(--primary-pink);
-    /* Um tom dourado para os ícones (igual à imagem) ou use var(--primary-blue) */
     font-size: 1.2rem;
     width: 20px;
     /* Alinha os ícones */
@@ -139,17 +137,17 @@
 /* Redes Sociais */
 .hero__socials {
     display: flex;
+    align-items: center;
     gap: 25px;
 }
 
 .hero__socials a {
-    color: var(--text-black);
+    color: var(--text-white);
     font-size: 1.5rem;
     transition: transform 0.2s, color 0.2s;
 }
 
 .hero__socials a:hover {
-    color: var(--primary-pink);
     transform: translateY(-3px);
     transition: var(--events-social);
 }
