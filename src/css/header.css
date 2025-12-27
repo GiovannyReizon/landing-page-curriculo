@@ -4,9 +4,6 @@
 /* ------ Header ------ */
 /* -------------------------- */
 
-
-
-
 /* --- 3. Header (Navegação) --- */
 .navbar {
     height: var(--header-height);
@@ -95,7 +92,8 @@ a.links--contact:hover {
         padding: 0 20px;
     }
 
-    .brand-role, .nav-links {
+    .brand-role,
+    .nav-links {
         display: none;
     }
 }
