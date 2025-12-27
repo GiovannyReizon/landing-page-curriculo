@@ -141,39 +141,66 @@
     gap: 25px;
 }
 
+/* feat: Adcionar toolipt para hero__socials a
+/* style: Remover hover por ícones */
 .hero__socials a {
-    color: var(--text-white);
-    font-size: 1.5rem;
-    transition: transform 0.2s, color 0.2s;
+    position: relative;
+    background-color: var(--text-white);
+    color: var(--text-black);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: var(--bg-white);
+    padding: 5px 8px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* --- Efeito de Hover --- */
+.hero__socials a:hover .tooltip {
+    top: -40px;
+    /* Sobe um pouco ao aparecer */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.hero__socials a:hover .tooltip {
+    background: var(--primary-pink);
+}
+
+.hero__socials a:hover .tooltip::before {
+    background: var(--primary-pink);
 }
 
 .hero__socials a:hover {
-    transform: translateY(-3px);
-    transition: var(--events-social);
-}
-
-/* novo: cor de hover para cada item */
-.hero__socials a .linkedin:hover {
-    color: var(--linkedin);
-}
-
-
-.hero__socials a .instagram:hover {
-    /* usei bg-linear com clip-text*/
-    background: var(--instagram);
-    -webkit-background-clip: text;
-    /* Necessário para navegadores Chrome/Safari */
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.hero__socials a .github:hover {
-    color: var(--primary-pink);
-}
-
-.hero__socials a .codepen:hover {
-    color: var(--codepen);
+    color: var(--bg-white);
+    background-color: var(--primary-pink);
 }
 
 /* --- Lado Direito: Imagem --- */
